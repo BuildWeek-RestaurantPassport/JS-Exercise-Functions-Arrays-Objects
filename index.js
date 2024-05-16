@@ -42,7 +42,7 @@ function addNumbers(num1, num2) {
 function sayGoodbye(name) {
   return(`Goodbye, ${name} Have a great day.`)
 }
-console.log(sayGoodbye(`Teresa`));
+//console.log(sayGoodbye(`Teresa`));
 /**
  * ### Challenge `temperatureCtoF`
  * 
@@ -60,7 +60,7 @@ console.log(sayGoodbye(`Teresa`));
 function temperatureCtoF(celcius){
  return(Math.round(celcius*(9/5)+32))
 }
-console.log(temperatureCtoF(24))
+//console.log(temperatureCtoF(24))
 
 // function temperatureCtoF(celcius, fahrenheit) {
 //  return fahrenheit
@@ -88,7 +88,7 @@ console.log(temperatureCtoF(24))
 function temperatureInf(temp, unit) {
   if (unit===`C`){return(Math.round(temp*(9/5)+32))+`F`}else{return(`{temp}${unit}`)}
 }
-console.log(temperatureInf(24, `C`))
+//console.log(temperatureInf(24, `C`))
 
 // function temperatureInF(temperature,unit) {
 //  if (unit == 'F') {return temperature;}else if (unit == 'C') {
@@ -159,10 +159,11 @@ function getName() {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex() {
+  let array=[`orange`, `grape`,`apple`, `bananan`, `mango`]
+  return(array.indexOf(`apple`))
 }
-
+//console.log(appleIndex())
 /**
  * ### Challenge `isItAnApple`
  * 
@@ -178,10 +179,12 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
-}
+function isItAnApple(array) {
+  const fruits=['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
+  for(i=0; i<fruits.length; i++){if (fruits[i]==='apple'){console.log(true);}else{console.log(false)}}
 
+}
+//console.log(isItAnApple('fruits'))
 
 
 
